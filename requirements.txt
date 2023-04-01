@@ -1,4 +1,6 @@
 # requirements.txt
-gradio
+gradio == 3.14.0
 transformers
 torch
+torchvision
+requests
