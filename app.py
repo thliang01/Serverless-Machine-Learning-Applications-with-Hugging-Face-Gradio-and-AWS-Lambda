@@ -19,7 +19,8 @@ def predict(inp):
   return confidences
 
 # create gradio interface, with text input and dict output
-gr.Interface(fn=predict, 
+gr.Interface(title="ImageNet",
+             fn=predict, 
              inputs=gr.Image(type="pil"),
              outputs=gr.Label(num_top_classes=3),
              examples=["lion.jpg", "cheetah.jpg"]).launch()
