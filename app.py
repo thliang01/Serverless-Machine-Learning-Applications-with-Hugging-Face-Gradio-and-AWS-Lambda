@@ -19,7 +19,7 @@ def predict(inp):
   return confidences
 
 # create gradio interface, with text input and dict output
-gr.Interface(title="ImageNet",
+gr.Interface(title="Image Classification in PyTorch",
              fn=predict, 
              inputs=gr.Image(type="pil"),
              outputs=gr.Label(num_top_classes=3),
