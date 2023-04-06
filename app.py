@@ -15,7 +15,7 @@ def predict(inp):
   inp = transforms.ToTensor()(inp).unsqueeze(0)
   with torch.no_grad():
     prediction = torch.nn.functional.softmax(model(inp)[0], dim=0)
-    confidences = {labels[i]: float(prediction[i]) for i in range(1000)}    
+    confidences = {labels[i]: float(prediction[i]) for i in range(999)}    
   return confidences
 
 # create gradio interface, with text input and dict output
