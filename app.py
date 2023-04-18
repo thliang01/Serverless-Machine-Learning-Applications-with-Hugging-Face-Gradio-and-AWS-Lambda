@@ -26,4 +26,4 @@ gr.Interface(title="Image Classification in PyTorch",
              examples=["lion.jpg", "cheetah.jpg"]).launch()
 
 # run the app
-gr.launch(server_port=8080, enable_queue=False)
+gr.launch(server_port=7680, enable_queue=False, share=True)
